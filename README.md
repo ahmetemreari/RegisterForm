@@ -1,6 +1,6 @@
 # Modern Kayıt Formu | Modern Registration Form
 
-![Kayıt Formu Ekran Görüntüsü](screenshots/KayitFormu1.jpg)
+![Kayıt Formu Ekran Görüntüsü](screenshots/KayitFormu1.png)
 
 ## 🇹🇷 Türkçe Açıklama
 
