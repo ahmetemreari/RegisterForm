@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu | AHMET EMRE ARI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+
+
+
+    <div class="form-container">
+        <form id="survey-form">
+            <h1 id="title">Kayıt Formu</h1>
+            <p id="description">Hemen ücretsiz kayıt olun ve ayrıcalıklardan yararlanın!</p>
+
+            <div class="form-group">
+                <label id="name-label" for="name">İsim Soyisim</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Adınızı ve soyadınızı girin" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">E-posta Adresi</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="E-posta adresinizi girin" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Yaş</label>
+                <input 
+                    type="number" 
+                    id="number" 
+                    name="age" 
+                    min="18" 
+                    max="100" 
+                    placeholder="Yaşınızı girin (18-100)" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Meslek Alanı</label>
+                <select id="dropdown" name="profession" required>
+                    <option value="">Meslek Alanınızı Seçin</option>
+                    <option value="developer">Yazılım Geliştirici</option>
+                    <option value="designer">Tasarımcı</option>
+                    <option value="manager">Yönetici</option>
+                    <option value="student">Öğrenci</option>
+                    <option value="other">Diğer</option>
+                </select>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Öğrenim Durumu</label>
+                <div class="radio-options">
+                    <input 
+                        type="radio" 
+                        id="lisans" 
+                        name="education" 
+                        value="lisans"
+                    >
+                    <label for="lisans">Lisans</label>
+
+                    <input 
+                        type="radio" 
+                        id="yuksek-lisans" 
+                        name="education" 
+                        value="yuksek-lisans"
+                    >
+                    <label for="yuksek-lisans">Yüksek Lisans</label>
+
+                    <input 
+                        type="radio" 
+                        id="doktora" 
+                        name="education" 
+                        value="doktora"
+                    >
+                    <label for="doktora">Doktora</label>
+                </div>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label>İlgi Alanları</label>
+                <div class="checkbox-options">
+                    <input 
+                        type="checkbox" 
+                        id="teknoloji" 
+                        name="interests" 
+                        value="teknoloji"
+                    >
+                    <label for="teknoloji">Teknoloji</label>
+
+                    <input 
+                        type="checkbox" 
+                        id="yazilim" 
+                        name="interests" 
+                        value="yazilim"
+                    >
+                    <label for="yazilim">Yazılım</label>
+
+                    <input 
+                        type="checkbox" 
+                        id="spor" 
+                        name="interests" 
+                        value="spor"
+                    >
+                    <label for="spor">Spor</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Ek Yorumlar</label>
+                <textarea 
+                    id="comments" 
+                    name="comments" 
+                    placeholder="Eklemek istediğiniz bir şey var mı?"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <input 
+                    type="submit" 
+                    id="submit" 
+                    value="Kayıt Ol" 
+                    class="submit-btn"
+                >
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        // Form gönderimi için basit bir işlev
+        document.getElementById('survey-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Kayıt işlemi başarıyla tamamlandı!');
+        });
+    </script>
+</body>
+</html>
